@@ -9,4 +9,6 @@ public interface FactRepository extends CrudRepository<Fact, Long> {
 
 	List<Fact> findAll();
 	
+	List<Fact> findUserFactsById(Long id);
+	
 }

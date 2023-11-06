@@ -9,4 +9,6 @@ public interface JokeRepository extends CrudRepository<Joke, Long> {
 
 	List<Joke> findAll();
 	
+	List<Joke> findUserJokesById(Long id);
+	
 }
